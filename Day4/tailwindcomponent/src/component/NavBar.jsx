@@ -1,3 +1,4 @@
+import {Link} from "./Link"
 
 
 const NavBar = () => {
@@ -5,18 +6,12 @@ const NavBar = () => {
     <>
 
     
-    <div  className="bg-amber-200 text-amber-950 flex justify-center p-10  ">
-     <div>Logo</div>
-   
-   
-        <div  className="">
-            <a href="">Home</a>
-            <a href="">Contact</a>
-            <a href="">Login</a>
-            <a href="">Help</a>
-        </div>
-   
-    </div>
+   <div className="bg-fuchsia-700 p-5 items-center text-gray-200 flex justify-between">
+    <Logo/>
+    <Link/>
+    
+    
+   </div>
 
     
     
@@ -25,3 +20,13 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+const Logo = ()=>{
+  return(
+    <>
+    <div className="mx-10 bg-fuchsia-950 w-25 text-center h-15 flex justify-center items-center rounded-2xl">
+      <p>Logo</p>
+    </div>
+    </>
+  )
+}
