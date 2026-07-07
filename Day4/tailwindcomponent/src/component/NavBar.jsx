@@ -6,7 +6,7 @@ const NavBar = () => {
     <>
 
     
-   <div className="bg-fuchsia-700 p-5 items-center text-gray-200 flex justify-between">
+   <div className="bg-fuchsia-700 p-5 items-center text-gray-200 flex justify-between   ">
     <Logo/>
     <Link/>
     
