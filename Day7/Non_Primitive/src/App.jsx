@@ -120,6 +120,34 @@ const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
         </div>
       </div>
     </div>
+    
+    <div>
+      <h1>Task-8</h1>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "50px",
+        
+        }}
+      >
+        <div
+          style={{
+            border: "1px solid gray",
+            padding: "20px",
+            width: "250px",
+            borderRadius: "10px",
+            boxShadow: "0 0 10px lightgray",
+          }}
+        >
+          <h2>Student Details</h2>
+          <p><b>Name:</b> {student.name}</p>
+          <p><b>Course:</b> {student.course}</p>
+          <p><b>Experience:</b> {student.experience}</p>
+        </div>
+      </div>
+    </div>
   
 
 
