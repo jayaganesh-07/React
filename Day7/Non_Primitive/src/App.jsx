@@ -21,9 +21,9 @@ const email = undefined
 const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
 //Task-8
   const student = {
-    name: "Jaya Ganesh",
-    course: "React JS",
-    experience: "1 Year",
+    Name: "Jaya Ganesh",
+    Course: "Full Stack",
+    Experience: "1 Year",
   };
 
 
@@ -90,36 +90,19 @@ const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
      
    
 </div>
-
-
-  
-      <div>
       <h1>Task-8</h1>
+    <div className='bg-red-500 p-4 h-30 w-40 flex justify-center  rounded-2xl '>
+      
+      <div>
+        <p>Name: {student.Name}</p>
+        <p>Course : {student.Course}</p>
+        <p>Experience : {student.Experience}</p>
+     </div>
+     </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "50px",
-        
-        }}
-      >
-        <div
-          style={{
-            border: "1px solid gray",
-            padding: "20px",
-            width: "250px",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px lightgray",
-          }}
-        >
-          <h2>Student Details</h2>
-          <p><b>Name:</b> {student.name}</p>
-          <p><b>Course:</b> {student.course}</p>
-          <p><b>Experience:</b> {student.experience}</p>
-        </div>
-      </div>
-    </div>
+    
+  
+     
 
 
    
