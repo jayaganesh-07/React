@@ -25,6 +25,23 @@ const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
     Course: "Full Stack",
     Experience: "1 Year",
   };
+  //Task-9
+   const students = [{
+      id: 1,
+      name: "Jaya Ganesh",
+      course: "React JS",
+    },
+    {
+      id: 2,
+      name: "Rahul",
+      course: "JavaScript",
+    },
+    {
+      id: 3,
+      name: "Priya",
+      course: "HTML & CSS",
+    },
+  ];
 
 
 
@@ -91,7 +108,7 @@ const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
    
 </div>
       <h1>Task-8</h1>
-    <div className='bg-red-500 p-4 h-30 w-40 flex justify-center  rounded-2xl '>
+    <div className="flex flex-wrap justify-center gap-6 mt-10 hover:scale-105 transition duration-300"   border rounded-xl    >
       
       <div>
         <p>Name: {student.Name}</p>
@@ -100,7 +117,31 @@ const hero = ["Vijay","Ajith","Suriya","SK","Dhanush"]
      </div>
      </div>
 
-    
+
+
+     <h1 >
+        Task 9 - Array of Objects Rendering
+      </h1>
+
+      <div className="flex flex-wrap justify-center gap-6 mt-10">
+        {students.map((student) => (
+          <div
+            key={student.id}
+            className="w-64 bg-white border rounded-xl shadow-lg p-5 hover:scale-105 transition duration-300">
+            <h2 className="text-xl font-bold text-blue-600">
+              ID: {student.id}
+            </h2>
+
+            <p className="mt-3 text-lg">
+              <span className="font-semibold">Name:</span> {student.name}
+            </p>
+
+            <p className="mt-2 text-lg">
+              <span className="font-semibold">Course:</span> {student.course}
+            </p>
+          </div>
+        ))}
+      </div>
   
      
 
