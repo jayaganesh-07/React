@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const StudentCard = ({Name , Age , Course, isPlaced}) => {
+const StudentCard = ({ Name, Age, Course, isPlaced }) => {
   return (
-   <>
-   <h2>Task-1</h2>
-   <h2>name : {Name}</h2>
-   <h2>age : {Age}</h2>
-   <h2>course : {Course}</h2>
-   <h2>status : {isPlaced ? "Placed" : "Not Placed"}</h2>
-   
-   </>
-  )
-}
+    <>
+      <h2>Task-1</h2>
 
-export default StudentCard
+      <p>Name : {Name}</p>
+      <p>Age : {Age}</p>
+      <p>Course : {Course}</p>
+      <p>Status : {isPlaced ? "Placed" : "Not Placed"}</p>
+    </>
+  );
+};
+
+export default StudentCard;

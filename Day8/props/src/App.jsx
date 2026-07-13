@@ -1,51 +1,51 @@
 import EmployeCard from "./components/EmployeCard"
 import StudentCard from "./components/StudentCard"
-import Students from "./components/Students";
+import StudentList from "./components/StudentList";
 
 
 const App = () => {
 
-  const employe = {Name :" Rahul",
+  const employe = {
+  Name: "Rahul",
+  Email: "rahul@gmail.com",
+  City: "Chennai",
+  Experience: "3 Years",
+};
 
-Email : "rahul@gmail.com",
 
-City :" Chennai",
-
-Experience : "3 Years"}
-
-
-const students = [
+  const students = [
   {
     id: 1,
-    name: "Arun",
-    course: "Angular"
+    name: "Sudhan",
+    course: "React"
   },
   {
     id: 2,
-    name: "Meena",
-    course: "Data Science"
+    name: "Abinaya",
+    course: "Java"
   },
   {
     id: 3,
-    name: "Vignesh",
-    course: "Node.js"
+    name: "Rahul",
+    course: "Python"
   },
   {
     id: 4,
-    name: "Kavya",
-    course: "Cyber Security"
+    name: "Priya",
+    course: "UI/UX"
   },
   {
     id: 5,
-    name: "Naveen",
-    course: "Machine Learning"
+    name: "Karthik",
+    course: "Full Stack"
   }
 ];
+
   return (
     <>
     <StudentCard Name = "Sudhan" Age = {25} Course="React" isPlaced={true}/>
     <EmployeCard details={employe}/>
-    <Students datas={students}/>
+    <StudentList data={students}/>
     </>
   )
 }
