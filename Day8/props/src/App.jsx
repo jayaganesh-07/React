@@ -16,27 +16,27 @@ const App = () => {
   const students = [
   {
     id: 1,
-    name: "Sudhan",
+    name: "Vijay",
     course: "React"
   },
   {
     id: 2,
-    name: "Abinaya",
+    name: "Ajith",
     course: "Java"
   },
   {
     id: 3,
-    name: "Rahul",
+    name: "Vinoth",
     course: "Python"
   },
   {
     id: 4,
-    name: "Priya",
+    name: "SK",
     course: "UI/UX"
   },
   {
     id: 5,
-    name: "Karthik",
+    name: "Surya",
     course: "Full Stack"
   }
 ];
