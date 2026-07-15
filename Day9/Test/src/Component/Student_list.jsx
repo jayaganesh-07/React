@@ -1,24 +1,18 @@
-import React from 'react'
-
-const Student_list = (g) => {
-    const{list}=g
-    console.log(list);
-    
+const Student_list = ({ list }) => {
   return (
-    <>
-    <div >
-        <h1>{list.map((e)=>(
-            <div className='bg-amber-800 p-3 justify-center gap-3'>
-            <div className='bg-amber-50 w-40 h-40   '>
-                 <h1>{e.id}</h1>
-                  <h1>{e.name}</h1>
-                   <h1>{e.course}</h1>
-                   </div>
-            </div>
-        ))}</h1>
+    <div className="flex gap-5 flex-wrap">
+      {list.map((e) => (
+        <div
+          key={e.id}
+          className="border p-5 rounded bg-orange-200 w-52"
+        >
+          <h2>ID : {e.id}</h2>
+          <h2>Name : {e.name}</h2>
+          <h2>Course : {e.course}</h2>
+        </div>
+      ))}
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default Student_list
+export default Student_list;

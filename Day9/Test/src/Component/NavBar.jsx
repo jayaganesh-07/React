@@ -1,26 +1,16 @@
-import { Link } from "react-router-dom"
-import Home from "./Home";
+import { Link } from "react-router-dom";
 
-
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <>
-    <div className="bg-blue-500 p-3 flex justify-between align-center">
-    <div className="bg-white p-1">
-        logo
-    </div>
-    <div className="flex gap-5">
+    <div className="bg-blue-600 text-white p-4 flex justify-between">
+      <h2 className="font-bold">React Tasks</h2>
 
+      <div className="flex gap-5">
         <Link to="/">Home</Link>
         <Link to="/Employee">Employee</Link>
-        <Link to="/">Task 3</Link>
-        <Link to="/">Task 4</Link>
-        <Link to="/">Task 5</Link>
+      </div>
     </div>
-     </div>
-     <Home/>
-    </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default NavBar;

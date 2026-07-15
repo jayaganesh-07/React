@@ -1,17 +1,13 @@
-
-
-const Movies = ({actor}) => {
-   
-   
+const Movie = ({ actor }) => {
   return (
-   <>
-   <div>
-    <h1>{actor.map((actors)=>(
-        <h1>{actors}</h1>
-    ))}</h1>
-   </div>
-   </>
-  )
-}
+    <div className="border p-5 rounded bg-blue-200">
+      <h2 className="font-bold mb-2">Actors</h2>
 
-export default Movies
+      {actor.map((item, index) => (
+        <h3 key={index}>{item}</h3>
+      ))}
+    </div>
+  );
+};
+
+export default Movie;
