@@ -1,7 +1,7 @@
 import React from "react";
-import Counter from "./assets/component/Counter";
-import NameChange from "./assets/component/nameChange";
-import LoginStatus from "./assets/component/LoginStatus ";
+import Counter from "./component/Counter";
+import NameChange from "./component/nameChange";
+import LoginStatus from "./component/LoginStatus ";
 
 const App = () => {
   return (
