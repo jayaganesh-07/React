@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Array from "./component/Array";
+import Task from "./component/Task";
 
 const App = () => {
   const [color, setColor] = useState(true);
@@ -10,6 +11,7 @@ const App = () => {
 
   return (
     <>
+    <Task/>
      <Array/>
       <div
         className={
@@ -25,6 +27,7 @@ const App = () => {
               Click
         </button>
       </div>
+
 
      
     </>

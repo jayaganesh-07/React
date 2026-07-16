@@ -6,13 +6,14 @@ const Array = () => {
 
 
 
-
+//array
 
   const changeData = () => {
     setArray([...array, 10003]);
   };
+//object
   const chaneName = () =>{
-    setObj({...obj,Model:"Iqoo"})
+    setObj({...obj,Model:"Iqoo",Rate:"2 Lakhs"})
   }
 
 
@@ -34,8 +35,8 @@ const Array = () => {
       <div className="p-5   rounded-3xl gap-3 bg-cyan-300 w-40">
         <h1 className="text-3xl">Object</h1>
         <p>Model:{obj.Model}</p>
-        <p>Model:{obj.Rate}</p>
-        <p>Model:{obj.Storage}</p>
+        <p>Rate:{obj.Rate}</p>
+        <p>Storage:{obj.Storage}</p>
         <button className="rounded bg-amber-200" onClick={chaneName} > Click Here </button>
       </div>
     </>
