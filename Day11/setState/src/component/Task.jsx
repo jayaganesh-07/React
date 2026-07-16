@@ -30,6 +30,18 @@ const changeCompany=()=>{
     setCompany({...company,Company:"Microsoft"})
 }
 
+//Task-5
+const [student, setStudent] = useState([
+  { Id: 1, Name: "Sudhan" },
+  { Id: 2, Name: "Rahul" }
+]);
+
+const updateStudent = () => {
+  const updatedStudent = [...student]
+  updatedStudent[1].Name = "Vijay"
+  setStudent(updatedStudent);
+}
+
   return (
    <>
    <div className="flex justify-between items-center g-3 ">
@@ -60,7 +72,19 @@ const changeCompany=()=>{
      <p>City:{company.City}</p>
      <button className="rounded bg-mauve-800 w-24 text-white"  onClick={changeCompany} >Updated Company</button>
    </div>
-   </div>
+   </div> 
+   <div>
+  <h1>Task-5</h1>
+
+  {student.map((e) => (
+    <div key={e.Id}>
+      <p>Id: {e.Id}</p>
+      <p>Name: {e.Name}</p>
+    </div>
+    
+  ))}
+  <button onClick={updateStudent}>update Student</button>
+</div>
    
    </>
   )
