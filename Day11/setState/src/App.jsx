@@ -14,8 +14,8 @@ const App = () => {
       <div
         className={
           color
-            ? "bg-fuchsia-400 w-screen h-screen"
-            : "bg-amber-200 w-screen h-screen"
+            ? "bg-fuchsia-400 w-40 h-40"
+            : "bg-amber-200 w-40 h-40"
         }
       >
         <button

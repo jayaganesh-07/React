@@ -11,18 +11,33 @@ const Array = () => {
   const changeData = () => {
     setArray([...array, 10003]);
   };
-  const chaneName = ()
+  const chaneName = () =>{
+    setObj({...obj,Model:"Iqoo"})
+  }
 
 
   return (
     <>
     
-      <h1>{array.map((e)=>(
+      <div className="p-5   rounded-3xl gap-3 bg-fuchsia-200
+       w-40">
+        <h1>Array</h1>
+        <h1>{array.map((e)=>(
         <h1>
           {e}
         </h1>
       ))}</h1>
-      <button onClick={changeData}>Click</button>
+      <button className="rounded bg-amber-600 text-white w-20
+      " onClick={changeData}>Click</button>
+      </div>
+
+      <div className="p-5   rounded-3xl gap-3 bg-cyan-300 w-40">
+        <h1 className="text-3xl">Object</h1>
+        <p>Model:{obj.Model}</p>
+        <p>Model:{obj.Rate}</p>
+        <p>Model:{obj.Storage}</p>
+        <button className="rounded bg-amber-200" onClick={chaneName} > Click Here </button>
+      </div>
     </>
   );
 };
