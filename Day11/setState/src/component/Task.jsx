@@ -40,11 +40,20 @@ const updateStudent = () => {
   const updatedStudent = [...student]
   updatedStudent[1].Name = "Vijay"
   setStudent(updatedStudent);
+
+}
+
+//Task-6
+const [product,setProduct]= useState([{id:1,name:"Mobile"},{id:2,name:"Laptop"}])
+const updateProduct =()=>{
+const updateProduct =[...product]
+updateProduct[1].name = "Tablet"
+setProduct(updateProduct)
 }
 
   return (
    <>
-   <div className="flex justify-between items-center g-3 ">
+   <div className="flex justify-center items-center g-3 ">
     <div className="bg-amber-100 p-5 w-40 rounded-4xl m-5 hover:scale-110 transition duration-300"   >
 <h2 className="font-bold">Task-1</h2>
 <h1>{heroes.map((e)=>(<h1>{e}</h1>))}</h1>
@@ -72,8 +81,8 @@ const updateStudent = () => {
      <p>City:{company.City}</p>
      <button className="rounded bg-mauve-800 w-24 text-white"  onClick={changeCompany} >Updated Company</button>
    </div>
-   </div> 
-   <div>
+
+     <div className="bg-amber-300 p-5 w-40 rounded-4xl m-5 hover:scale-110 transition duration-300">
   <h1>Task-5</h1>
 
   {student.map((e) => (
@@ -83,8 +92,23 @@ const updateStudent = () => {
     </div>
     
   ))}
-  <button onClick={updateStudent}>update Student</button>
+  <button className="rounded bg-fuchsia-800 w-24 text-white"  onClick={updateStudent}>update Student</button>
 </div>
+
+<div className="bg-amber-300 p-5 w-40 rounded-4xl m-5 hover:scale-110 transition duration-300">
+  <h1>Task-6</h1>
+
+  {product.map((e) => (
+    <div key={e.id}>
+      <p>Id: {e.id}</p>
+      <p>Name: {e.name}</p>
+    </div>
+    
+  ))}
+  <button className="rounded bg-fuchsia-800 w-24 text-white"  onClick={updateProduct}>update Product</button>
+</div>
+   </div> 
+ 
    
    </>
   )
