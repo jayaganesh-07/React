@@ -16,10 +16,7 @@ const App = () => {
     <>
       <h2>{userName}</h2>
 
-      <input type="text"
-      placeholder="Enter your name" 
-      value={inputValue} 
-      onChange={handleChange} />
+      <input type="text"placeholder="Enter your name" value={inputValue} onChange={handleChange} />
       
 
 <button onClick={handleClick}>Change Name </button>
