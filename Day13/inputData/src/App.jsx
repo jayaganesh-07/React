@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Task from "./Component/Task";
 
 const App = () => {
   const [inputValue, setInputValue] = useState("")
@@ -20,7 +21,10 @@ const App = () => {
       
 
 <button onClick={handleClick}>Change Name </button>
+    
+     <Task/>
     </>
+   
   )
 }
 
