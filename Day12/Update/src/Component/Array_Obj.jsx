@@ -78,7 +78,7 @@ const updateStudents=()=>{
         <h1>Task 2</h1>
         <h1>{price.name}</h1>
          <h1>{price.price}</h1>
-        <button className='border-bs-orange-500 p-1  rounded mb-6' onClick={changePrice}>Click to change</button>
+        <button className='bg-orange-500 p-1  rounded mb-6' onClick={changePrice}>Click to change</button>
     </div>
     <div className='p-5 m-5'>
         <h1>TasK 3</h1>
