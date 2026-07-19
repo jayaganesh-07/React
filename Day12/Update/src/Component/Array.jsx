@@ -11,7 +11,7 @@ const arrChange =()=>{
    <>
 <div>
     <h1>{arr}</h1>
-    <button onClick={arrChange}> juhinonjln</button>
+    <button onClick={arrChange}> click</button>
 </div>
    
    </>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Array from './Component/Array'
+import Array_obj from './Component/Array_Obj'
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
     <button onClick={objChange}>Click to change</button>
    </div>
    <Array/>
+   <Array_obj/>
    </>
   )
 }
