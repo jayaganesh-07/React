@@ -24,6 +24,7 @@ const Task = () => {
     const handleSubmit =()=>{
         setStudentName(nameInput)
         setCourse(courseInput)
+      
     }
     //Task-3
     //input
@@ -56,24 +57,24 @@ const [categoryInput,setCategoryInput]=useState("")
     setCategory(categoryInput)
   }
   //Task-5
-   // Input States
-  const [nameeInput, setNameeInput] = useState("");
-  const [emailInput, setEmailInput] = useState("");
-  const [cityInput, setCityInput] = useState("");
-  const [ageInput, setAgeInput] = useState("");
+   // Input 
+  const [nameeInput, setNameeInput] = useState("")
+  const [emailInput, setEmailInput] = useState("")
+  const [cityInput, setCityInput] = useState("")
+  const [ageInput, setAgeInput] = useState("")
 
-  // Display States
-  const [namee, setNamee] = useState("");
-  const [email, setEmail] = useState("");
-  const [city, setCity] = useState("");
-  const [age, setAge] = useState("");
+  // Display 
+  const [namee, setNamee] = useState("")
+  const [email, setEmail] = useState("")
+  const [city, setCity] = useState("")
+  const [age, setAge] = useState("")
 
   const handledSubmit = () => {
-    setNamee(nameeInput);
-    setEmail(emailInput);
-    setCity(cityInput);
-    setAge(ageInput);
-  };
+    setNamee(nameeInput)
+    setEmail(emailInput)
+    setCity(cityInput)
+    setAge(ageInput)
+  }
 
 
 
@@ -117,6 +118,7 @@ const [categoryInput,setCategoryInput]=useState("")
           backgroundColor:"blue",
           color:"white"
         }}>
+            <h1>List</h1>
     
      <p>{product}</p>
       <p>{price}</p>
