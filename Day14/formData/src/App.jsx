@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import Task from './Task'
 
 const App = () => {
+  //display
   const [data, setData] = useState("")
+  //input value
   const [change, setChange] = useState([])
 
   const changeName = (e) => {
@@ -17,13 +20,15 @@ const App = () => {
 
   return (
     <>
+    <h1>Task-3</h1>
       <form>{change.map((e, i) => (
           <h2 key={i}>{e}</h2>
         ))}
 
-        <input type="text" value={data} onChange={changeName} placeholder="Enter a name" /> <br /> <br />
+        <input type="text" value={data} onChange={changeName} placeholder="Enter Technology" /> <br /> <br />
      <button onClick={summit}>Click</button>
       </form>
+      <Task/>
     </>
   )
 }
