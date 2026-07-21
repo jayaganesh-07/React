@@ -2,6 +2,13 @@
 import React, { useState, useEffect } from "react"
 
 const App = () => {
+     
+  //task-1
+  const [counted, setCounted] = useState(0)
+
+  useEffect(() => {
+    console.log("Latest Count:", counted)
+  }, [counted])
 
 
   //task-3
@@ -33,6 +40,15 @@ const [users, setUsers] = useState([])
 
   return (
     <>
+
+ <h1>Task-1</h1>
+
+      <h2>{counted}</h2>
+
+      <button onClick={() => setCounted(counted + 1)}>
+        Increment
+      </button>
+
     <div>
       <h1>Task-3</h1>
       <h1>{count}</h1>
