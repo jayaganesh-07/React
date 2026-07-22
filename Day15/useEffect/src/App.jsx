@@ -9,7 +9,13 @@ const App = () => {
   useEffect(() => {
     console.log("Latest Count:", counted)
   }, [counted])
+//   let number = 20
+//  const interval = ()=>{
+//    console.log(number++);
 
+   
+//  }
+//  interval()
 
   //task-3
   const [count, setCount] = useState(0)
@@ -45,9 +51,7 @@ const [users, setUsers] = useState([])
 
       <h2>{counted}</h2>
 
-      <button onClick={() => setCounted(counted + 1)}>
-        Increment
-      </button>
+      <button onClick={() => setCounted(counted + 1)}>Increment</button>
 
     <div>
       <h1>Task-3</h1>
