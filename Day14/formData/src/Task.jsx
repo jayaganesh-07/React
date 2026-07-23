@@ -43,7 +43,7 @@ const Task = () => {
     const [student,setStudent]=useState([])
 
    const submitted = (e) => {
-  e.preventDefault();
+  e.preventDefault()
 
   setStudent([...student, inputStudent])
   setInputStudent("")
